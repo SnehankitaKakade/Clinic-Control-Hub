@@ -1,2 +1,1 @@
-# Clinic-Control-Hub 
-Build Hospital Website
+# Clinic-Control-Hub : Hospital Website
