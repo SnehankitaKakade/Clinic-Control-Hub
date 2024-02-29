@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parth_Hospital_Receipt</title>
+
+
+    <!-- html file linked to css  -->
+    <link rel="stylesheet" href="Home.css">
+
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.rtl.min.css"
+        integrity="sha384-nU14brUcp6StFntEOOEBvcJm4huWjB0OcIeQ3fltAfSmuZFrkAif0T+UtNGlKKQv" crossorigin="anonymous">
+
+
+    <!-- Fontawesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        body {
+            /* background-color: #9799CA; */
+            background-image: url("bg-h.jpg");
+        }
+
+        .form-add {
+            text-align: center;
+        }
+
+        .hospi-name {
+            text-align: center;
+            font-weight: 590;
+            font-family: Gabriola, Times, serif;
+            padding: 0;
+            font-size: 4rem;
+            text-shadow: 3px 3px 3px gray;
+            color: teal;
+
+        }
+        .form-name {
+            text-align: center;
+            font-weight: bolder;
+            font-size: 1.4rem;
+            color:#bc4749;
+            text-shadow: 3px 3px 2px #738bab;
+        }
+
+        .form-sty {
+            background-color: #68cfb7;
+            width: 815px;
+            border: 7px solid #e4afd5;
+            border-radius: 15px;
+            position: absolute;
+            top: 7%;
+            left: 25%;
+
+            padding-left: 50px;
+        }
+
+
+        table,
+        tr,
+        tbody,
+        th,
+        thead,
+        td {
+
+
+            border: 1px solid transparent;
+            border-collapse: collapse;
+        }
+
+        table td {
+            text-align: center;
+        }
+
+        .particulars {
+            text-align: left;
+        }
+        .btnb {
+            height: 50px;
+            width:110px;
+            font-weight: bolder;
+            background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(255,94,247,1) 17.8%, rgba(2,245,255,1) 100.2% );
+            color: black;
+            font-size: 1.5rem;
+            border:3px solid rgb(59, 58, 58);
+            border-radius: 10px;
+            margin: 20px;
+        }
+    </style>
+
+
+
+</head>
+
+<body>
+
+
+    <form class="form-control form-sty">
+
+        <p class="hospi-name">Parth Hospital</p>
+
+        <table>
+
+
+            <tr class="form-add">
+                <th colspan="4">A/P. Kedgaon Stn. Tal. Daund</th>
+            </tr>
+            <tr style="text-align: center;">
+                <th style="padding-bottom: 20px;" colspan="4">Dist. Pune - 412203 &nbsp;&nbsp;&nbsp;&nbsp;<i
+                        class="fa-solid fa-phone"></i>&nbsp;&nbsp;02119-223762
+                        
+                        <hr style="color:black;border-width:6px;">
+                    <p  class="form-name">Bill Receipt</p>
+                </th>
+            </tr>
+            <tr>
+                <th><label class="form-label"> &nbsp;&nbsp;Name :</label></th>
+                <th><input type="text" class="form-control"></th>
+                <th><label class="form-label">&nbsp;&nbsp;Date</label></th>
+                <th><input type="date" class="form-control"></th>
+            </tr>
+            <tr>
+                <th><label class="form-label">&nbsp;&nbsp;DOA</label></th>
+                <th><input type="date" class="form-control"></th>
+                <th><label class="form-label">&nbsp;&nbsp;DOD</label></th>
+                <th><input type="date" class="form-control"></th>
+            </tr>
+            <tr>
+                <th><label class="form-label">&nbsp;&nbsp;Indoor No :</label></th>
+                <th><input type="number" class="form-control"></th>
+                <th><label class="form-label">&nbsp;&nbsp;Bill No :&nbsp;&nbsp;</label></th>
+                <th> <input type="number" class="form-control"></th>
+            </tr>
+            <tr style="text-align: center; font-size:1.2rem;font-weight: bold; ">
+                <th style="padding:10px">Sr.No.</th>
+                <th colspan="2">Particulars</th>
+                <th>Amount&nbsp;&nbsp;</th>
+            </tr>
+
+
+
+            <tr>
+                <td>1</td>
+                <td class="particulars" colspan="2"><label class="form-label">&nbsp;&nbsp;Consultations Charges</label>
+                </td>
+                <td><input type="number" class="form-control"></td>
+            </tr>
+            <td>2</td>
+            <td class="particulars" colspan="2"><label class="form-label">&nbsp;&nbsp;Room Charges</label></td>
+            <td><input type="number" class="form-control"></td>
+            </tr>
+            <td>3</td>
+            <td class="particulars" colspan="2"><label class="form-label">&nbsp;&nbsp;I V Charges</label></td>
+            <td><input type="number" class="form-control"></td>
+            </tr>
+            <td>4</td>
+            <td class="particulars" colspan="2"><label class="form-label">&nbsp;&nbsp;I M Charges</label></td>
+            <td><input type="number" class="form-control"></td>
+            </tr>
+            <td>5</td>
+            <td class="particulars" colspan="2"><label class="form-label">&nbsp;&nbsp;Operating Charges</label></td>
+            <td><input type="number" class="form-control"></td>
+            </tr>
+            <td>6</td>
+            <td class="particulars" colspan="2"><label class="form-label">&nbsp;&nbsp;Operating Theatre Charges</label>
+            </td>
+            <td><input type="number" class="form-control"></td>
+            </tr>
+            <td>7</td>
+            <td class="particulars" colspan="2"><label class="form-label">&nbsp;&nbsp;Anaesthetist's Charges</label>
+            </td>
+            <td><input type="number" class="form-control"></td>
+            </tr>
+            <td>8</td>
+            <td class="particulars" colspan="2"><label class="form-label">&nbsp;&nbsp;Assistant Charges</label></td>
+            <td><input type="number" class="form-control"></td>
+            </tr>
+            <td>9</td>
+            <td class="particulars" colspan="2"><label class="form-label">&nbsp;&nbsp;Laboratory Charges</label></td>
+            <td><input type="number" class="form-control"></td>
+            </tr>
+            <td>10</td>
+            <td class="particulars" colspan="2"><label class="form-label">&nbsp;&nbsp;Monitor Charges @</label></td>
+            <td><input type="number" class="form-control"></td>
+            </tr>
+            <td>11</td>
+            <td class="particulars" colspan="2"><label class="form-label">&nbsp;&nbsp;Oxygen Charges @</label></td>
+            <td><input type="number" class="form-control"></td>
+            </tr>
+            <td>12</td>
+            <td class="particulars" colspan="2"><label class="form-label">&nbsp;&nbsp;Dressing</label></td>
+            <td><input type="number" class="form-control"></td>
+            </tr>
+            <td>13</td>
+            <td class="particulars" colspan="2"><label class="form-label">&nbsp;&nbsp;Hospital Drugs, Medicines</label>
+            </td>
+            <td><input type="number" class="form-control"></td>
+            </tr>
+            <td>14</td>
+            <td class="particulars" colspan="2"><label class="form-label">&nbsp;&nbsp;Hospital Management</label></td>
+            <td><input type="number" class="form-control"></td>
+            </tr>
+            <td>15</td>
+            <td class="particulars" colspan="2"><label class="form-label">&nbsp;&nbsp; Ahendance</label></td>
+            <td><input type="number" class="form-control"></td>
+            </tr>
+            <td>16</td>
+            <td class="particulars" colspan="2"><label class="form-label">&nbsp;&nbsp;Nursing Charges</label></td>
+            <td><input type="number" class="form-control"></td>
+            </tr>
+            <td>17</td>
+            <td class="particulars" colspan="2"><label class="form-label">&nbsp;&nbsp;Disposable Material</label></td>
+            <td><input type="number" class="form-control"></td>
+            </tr>
+            <td>18</td>
+            <td class="particulars" colspan="2"><label class="form-label">&nbsp;&nbsp;catheterisation</label></td>
+            <td><input type="number" class="form-control"></td>
+            </tr>
+            <td>19</td>
+            <td class="particulars" colspan="2"><label class="form-label">&nbsp;&nbsp;X-Ray Charges /Sonography
+                    /ECG</label></td>
+            <td><input type="number" class="form-control"></td>
+            </tr>
+            <td>20</td>
+            <td class="particulars" colspan="2"><label class="form-label">&nbsp;&nbsp;Special
+                    Instruments-C-Arm/Cystoscopy</label></td>
+            <td><input type="number" class="form-control"></td>
+            </tr>
+
+
+            <tr style="text-align: right;">
+                <th colspan="3"><label>Total&nbsp;&nbsp;</label></th>
+                <th><input type="number" class="form-control"></th>
+            </tr>
+            <tr style="text-align: right;">
+                <th colspan="3"><label>Less Adv&nbsp;&nbsp;</label></th>
+                <th><input type="number" class="form-control"></th>
+            </tr>
+            <tr style="text-align: right;">
+                <th colspan="3"><label>Total&nbsp;&nbsp;</label></th>
+                <th><input type="number" class="form-control"></th>
+            </tr>
+            <tr style="text-align: left;">
+                <th colspan="1"><label>&nbsp;In Words - </label></th>
+                <th colspan="3"><input type="tex" class="form-control"></th>
+            </tr>
+            <tr style="text-align: left;">
+                <th><label>Sign. of Patient&nbsp;</label></th>
+                <th><input type="number" class="form-control"></th>
+                <th><label>Sign.of Dr.&nbsp;</label></th>
+                <th><input type="number" class="form-control"></th>
+            </tr>
+
+        </table>
+        <br>
+    </form>
+
+    <a href="patient_record.html"> <button  class="btnb"type="button" ><i class="fa-solid fa-arrow-left"></i>&nbsp;Back</button> </a>
+
+
+
+
+</body>
+
+</html>

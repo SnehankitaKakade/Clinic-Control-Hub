@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parth_hospital_Monitoring_Chart</title>
+
+
+    <!-- html file linked to css  -->
+    <link rel="stylesheet" href="Home.css">
+
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.rtl.min.css"
+        integrity="sha384-nU14brUcp6StFntEOOEBvcJm4huWjB0OcIeQ3fltAfSmuZFrkAif0T+UtNGlKKQv" crossorigin="anonymous">
+
+
+    <!-- Fontawesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <style>
+        body {
+            /* background-color: #9799CA; */
+            background-image: url("bg-h.jpg");
+        }
+
+        .form-sty {
+            background-color: #68cfb7;
+            border: 7px solid #e4afd5;
+            border-radius: 15px;
+            position: absolute;
+            top: 7%;
+            left: 25%;
+            width: 815px;
+            
+        }
+
+       
+        .form-name {
+            text-align: center;
+            font-weight: bolder;
+            font-size: 1.5rem;
+            color:#bc4749;
+            text-shadow: 3px 3px 2px #738bab;
+        }
+        .hospi-name {
+            text-align: center;
+            font-weight: 590;
+            font-family: Gabriola, Times, serif;
+            padding: 0;
+            font-size: 4rem;
+            text-shadow: 3px 3px 3px gray;
+            color: teal;
+
+        }
+        .input-sty {
+            width:100px;
+            border:2px solid #e4afd5;
+            border-radius: 5px;
+            line-height: 35px;
+        }
+        .tab1 {
+            margin-top: 20px;
+            margin-left: 70px;
+            font-weight: bold;
+
+        }
+        .tab1 input {
+            width:500px;
+            border:2px solid #e4afd5;
+            border-radius: 5px;
+            line-height: 25px;
+            margin-left:10px;
+            
+        }
+        .tab2 {
+            margin-left: 30px;
+            text-align: center;
+        }
+        .tab3 label {
+            padding:11px;
+        }
+        .tab3 input {
+            border:2px solid #e4afd5;
+            border-radius: 5px;
+            line-height: 25px;
+        }
+        .Inj {
+            width:300px;
+            margin-left:10px;
+            border:1px solid #e4afd5;
+            border-radius: 5px;
+            height: 35px;
+        }
+        .tab4 label {
+            padding:11px;
+        }
+        .tab4 input {
+            border:2px solid #e4afd5;
+            border-radius: 5px;
+        }
+        .btnb {
+            height: 50px;
+            width:110px;
+            font-weight: bolder;
+            background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(255,94,247,1) 17.8%, rgba(2,245,255,1) 100.2% );
+            color: black;
+            font-size: 1.5rem;
+            border:3px solid rgb(59, 58, 58);
+            border-radius: 10px;
+            margin: 20px;
+        }
+    </style>
+
+
+
+</head>
+
+<body>
+
+    <form class="form-control form-sty">
+
+
+        <p class="hospi-name">Parth Hospital</p>
+
+        <p class="form-name">ANC Record</p>
+
+        <hr style="color:black;border-width:6px;">
+        <table class="tab1">
+            <tr>
+                <td>Risk Factors :</td>
+                <td><input type="text" class="form-control" ></td>
+            </tr>
+            <tr>
+                <td>LMP :</td>
+                <td><input type="text" class="form-control"  ></td>
+            </tr>
+            <tr>
+                <td>EDD:</td>
+                <td><input type="text"  class="form-control" ></td>
+            </tr>
+            <tr>
+                <td>O/H :</td>
+                <td><input type="text"  class="form-control" ></td>
+            </tr>
+            <tr>
+                <td>M/H :</td>
+                <td><input type="text" class="form-control" ></td>
+            </tr>
+
+            
+        </table>
+        <br>
+        <table class="tab2">
+
+            <tr>
+                <th><label for="date"></label>Date</th>
+                <th><label for="wl"></label>WL</th>
+                <th><label for="bp"></label>BP</th>
+                <th><label for="Wks"></label>Wks</th>
+                <th><label for="p/a"></label>P/A</th>
+                <th><label for="fhs"></label>FHS</th>
+                <th><label for="rx"></label>RX</th>
+            </tr>
+            <tr>
+                <td><input type="date" id="date" class="input-sty"></td>
+                <td><input type="text" id="wl" class="input-sty"></td>
+                <td><input type="text" id="bp" class="input-sty" ></td>
+                <td><input type="text" id="Wks" class="input-sty"></td>
+                <td><input type="text" id="p/a" class="input-sty"></td>
+                <td><input type="text" id="fhs" class="input-sty"></td>                         
+                <td><input type="text" id="rx" class="input-sty"></td>                           
+                
+            </tr>
+            <tr>
+                <td><input type="date" id="date" class="input-sty"></td>
+                <td><input type="text" id="wl" class="input-sty"></td>
+                <td><input type="text" id="bp" class="input-sty" ></td>
+                <td><input type="text" id="Wks" class="input-sty"></td>
+                <td><input type="text" id="p/a" class="input-sty"></td>
+                <td><input type="text" id="fhs" class="input-sty"></td>                         
+                <td><input type="text" id="rx" class="input-sty"></td>                           
+                
+            </tr>
+            <tr>
+                <td><input type="date" id="date" class="input-sty"></td>
+                <td><input type="text" id="wl" class="input-sty"></td>
+                <td><input type="text" id="bp" class="input-sty" ></td>
+                <td><input type="text" id="Wks" class="input-sty"></td>
+                <td><input type="text" id="p/a" class="input-sty"></td>
+                <td><input type="text" id="fhs" class="input-sty"></td>                         
+                <td><input type="text" id="rx" class="input-sty"></td>                           
+                
+            </tr>
+            <tr>
+                <td><input type="date" id="date" class="input-sty"></td>
+                <td><input type="text" id="wl" class="input-sty"></td>
+                <td><input type="text" id="bp" class="input-sty" ></td>
+                <td><input type="text" id="Wks" class="input-sty"></td>
+                <td><input type="text" id="p/a" class="input-sty"></td>
+                <td><input type="text" id="fhs" class="input-sty"></td>                         
+                <td><input type="text" id="rx" class="input-sty"></td>                           
+                
+            </tr>
+            <tr>
+                <td><input type="date" id="date" class="input-sty"></td>
+                <td><input type="text" id="wl" class="input-sty"></td>
+                <td><input type="text" id="bp" class="input-sty" ></td>
+                <td><input type="text" id="Wks" class="input-sty"></td>
+                <td><input type="text" id="p/a" class="input-sty"></td>
+                <td><input type="text" id="fhs" class="input-sty"></td>                         
+                <td><input type="text" id="rx" class="input-sty"></td>                           
+                
+            </tr>
+            <tr>
+                <td><input type="date" id="date" class="input-sty"></td>
+                <td><input type="text" id="wl" class="input-sty"></td>
+                <td><input type="text" id="bp" class="input-sty" ></td>
+                <td><input type="text" id="Wks" class="input-sty"></td>
+                <td><input type="text" id="p/a" class="input-sty"></td>
+                <td><input type="text" id="fhs" class="input-sty"></td>                         
+                <td><input type="text" id="rx" class="input-sty"></td>                           
+                
+            </tr>
+            <tr>
+                <td><input type="date" id="date" class="input-sty"></td>
+                <td><input type="text" id="wl" class="input-sty"></td>
+                <td><input type="text" id="bp" class="input-sty" ></td>
+                <td><input type="text" id="Wks" class="input-sty"></td>
+                <td><input type="text" id="p/a" class="input-sty"></td>
+                <td><input type="text" id="fhs" class="input-sty"></td>                         
+                <td><input type="text" id="rx" class="input-sty"></td>                           
+                
+            </tr>
+            <tr>
+                <td><input type="date" id="date" class="input-sty"></td>
+                <td><input type="text" id="wl" class="input-sty"></td>
+                <td><input type="text" id="bp" class="input-sty" ></td>
+                <td><input type="text" id="Wks" class="input-sty"></td>
+                <td><input type="text" id="p/a" class="input-sty"></td>
+                <td><input type="text" id="fhs" class="input-sty"></td>                         
+                <td><input type="text" id="rx" class="input-sty"></td>                           
+                
+            </tr>
+            <tr>
+                <td><input type="date" id="date" class="input-sty"></td>
+                <td><input type="text" id="wl" class="input-sty"></td>
+                <td><input type="text" id="bp" class="input-sty" ></td>
+                <td><input type="text" id="Wks" class="input-sty"></td>
+                <td><input type="text" id="p/a" class="input-sty"></td>
+                <td><input type="text" id="fhs" class="input-sty"></td>                         
+                <td><input type="text" id="rx" class="input-sty"></td>                           
+                
+            </tr>
+            <tr>
+                <td><input type="date" id="date" class="input-sty"></td>
+                <td><input type="text" id="wl" class="input-sty"></td>
+                <td><input type="text" id="bp" class="input-sty" ></td>
+                <td><input type="text" id="Wks" class="input-sty"></td>
+                <td><input type="text" id="p/a" class="input-sty"></td>
+                <td><input type="text" id="fhs" class="input-sty"></td>                         
+                <td><input type="text" id="rx" class="input-sty"></td>                           
+                
+            </tr>
+
+            
+
+        </table>
+        <br>
+        <p style="font-weight:bold;font-size:1.1rem;border:2px solid black;width:180px;text-align: center;">Investigations :</p>
+        <table class="tab3">
+            
+            <tr>
+                <th><label for="hb" >HB :</label></th>
+                <th><input type="number" id="hb" class="form-control"></th>
+                <th><label for="bdgrp" >Blood Group & Rh :</label></th>
+                <th><input type="text" id="bdgrp" class="form-control"></th>
+            </tr>
+            <tr>
+                <th><label for="ur" >Urine(R) :</label></th>
+                <th><input type="number" id="ur" class="form-control"></th>
+                <th><label for="bsl" >BSL :</label></th>
+                <th><input type="text" id="bsl" class="form-control"></th>
+            </tr>
+            <tr>
+                <th><label for="hiv" >HIV :</label></th>
+                <th><input type="number" id="hiv" class="form-control"></th>
+                <th><label for="hbsAg" >HbsAg :</label></th>
+                <th><input type="text" id="hbsAg" class="form-control" ></th>
+            </tr>
+            <tr>
+                <th><label for="vdrl" >VDRL :</label></th>
+                <th><input type="number" id="vdrl" class="form-control" ></th>
+                <th><label for="a-scan" >Anomaly Scan :</label></th>
+                <th><input type="text" id="a-scan" class="form-control"></th>
+            </tr>
+            <tr>
+                <th><label for="typ" >Thyroid Profile :</label></th>
+                <th><input type="number" id="typ" class="form-control" ></th>
+                
+            </tr>
+        </table>
+        <br>
+        <p style="font-weight:bold;font-size:1.1rem;border:2px solid black;width:380px;text-align: center;">Syst. Exam / Any Other Findings :</p>
+
+        <p style="font-weight:bold;font-size:1rem;width:100px;display:inline-block">Inj.TT :</p>
+        <label> (1) </label><input type="text" class="Inj">
+        <label> (2) </label><input type="text"  class="Inj">
+
+        <br>
+        <br>
+        <p style="font-weight:bold;font-size:1.1rem;border:2px solid black;width:300px;text-align: center;margin-bottom: 30px;">Delivery / Babay Record :</p>
+
+      <table class="tab4">  
+        
+        <tr>
+            <th><label for="doa" >DOA :</label></th>
+            <th><input type="number" id="doa" class="form-control"></th>
+            <th><label for="dod" >DOD :</label></th>
+            <th><input type="text" id="dod" class="form-control"></th>
+            
+        </tr>
+        <tr>
+            <th><label for="d-notes" >Delivery Notes :</label></th>
+            <th><input type="text" id="d-notes" class="form-control"></th>
+            <th><label for="b-nots" >Baby Notes :</label></th>
+            <th><label for="female"><input type="radio" id="female" name="b-nots" value="Female" class="form-check-input"> &nbsp;Female</label> <label for="male"><input type="radio"name="b-nots" id="male" value="Male" class="form-check-input">&nbsp;&nbsp;Male</label></th>
+        </tr>
+        <tr>
+            <th><label for="wet" >Weight :</label></th>
+            <th><input type="number" id="wet" class="form-control"></th>
+            <th><label for="adv">Advice & F/U :</label></th>
+            <th><input type="text" id="adv" class="form-control" ></th>
+        </tr>
+        <tr>
+            <th><label for="birth-d" >Date Of Birth :</label></th>
+            <th><input type="date" id="birth-d" class="form-control" ></th>
+            <th><label for="birth-t" >Time Of Birth :</label></th>
+            <th><input type="time" id="birth-t" class="form-control"></th>
+        </tr>
+        
+    </table>
+    <br>
+
+
+
+        
+
+
+
+
+    </form>
+
+    <a href="patient_record.html"> <button  class="btnb"type="button" ><i class="fa-solid fa-arrow-left"></i>&nbsp;Back</button> </a>
+
+
+
+
+
+</body>
+
+</html>

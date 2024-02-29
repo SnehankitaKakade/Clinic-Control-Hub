@@ -1,0 +1,285 @@
+
+* {
+    margin :0;
+    font-family: arial;
+    border :border-box;
+
+}
+.nav {
+    position:fixed;
+    top:0;
+    width:100%;
+}
+
+.header{
+	position: fixed;
+    top: 0;
+    width: 100%;
+}
+.navbar {
+    width:100%;
+    color :red;
+    background-color: white;
+    height: 90px;
+   
+}
+
+.nav-name{
+  font-weight:590;
+  font-family: Gabriola, Times, serif;
+  font-size:3.5rem; 
+  text-shadow:3px 3px 3px gray;
+  color :teal;
+}
+/* BOX 3*/
+.emergency{
+	font-size:1.2rem;
+    margin-right:60px;
+    font-weight: bold;
+}
+
+/* menubar*/
+
+.menubar{
+	background-color:#232F3E;
+    height: 42px;
+    display: flex;
+    align-items :center; 
+    width:100%;
+    
+ }
+ .dropdown-menu a{
+    text-align:center;
+    background-color: rgb(200, 226, 236);
+    color:#232F3E;
+ }
+ .alink{
+ color:#fff;
+  margin-left :90px;
+ text-decoration:none;
+ font-weight:bolder;
+ font-size:1rem;
+ 
+ }
+ .menu{
+ width:85%;
+ display: flex;
+  }
+
+ .login{
+ width:15%;
+ display:flex;
+ font-size:1rem;
+ 
+ }
+ 
+ .user-icon{
+  display:flex;
+  font-size:1.5rem;
+  
+ }
+ 
+/*     slider   */
+ 
+    .slider {
+        margin-top:130px;
+    }
+
+   /* Tagline  */
+   
+   .tagline{
+    height:33px;
+    width:84%;
+    background: #FFFFFF;
+    margin-top:30px;
+    margin-left:100px;
+   
+   }
+   .tagline p {
+    margin:2px;
+    display : flex;
+    justify-content:center;
+    align-items:center;
+    font-weight: bolder;
+    font-size:1.2rem;
+    color:#232F3E;
+   }
+ 
+   
+
+/*   Doctors*/
+.doctors{
+    display:flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-left:190px;
+    margin-right:190px;
+    height:250px;
+}  
+.box{
+   
+   background-color:#232F3E;
+   color:white;
+   width:175px;
+   border:10px solid#232F3E;
+   height:190px;
+   border-radius: 10px;
+}
+.doc1-img{
+    background-image: url('docter2.png');
+    background-size: cover;
+    margin-left: 7px;
+    height: 140px;
+    width:140px;
+    border-radius: 50%;
+    margin-bottom:5px;
+   
+
+}
+
+.doc2-img{
+    background-image: url('docter2.png');
+    background-size: cover;
+    margin-left: 7px;
+    height: 140px;
+    width:140px;
+    border-radius: 50%;
+    margin-bottom:5px;
+    border:1px solid transparent;
+    
+}
+
+.doc3-img{
+    background-image: url('docter1.jpg');
+    background-size: cover;
+    margin-left: 7px;
+    height: 140px;
+    width:140px;
+    border-radius: 50%;
+    margin-bottom:5px;
+    border:1px solid transparent;
+ 
+}
+.doc-name{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border:1px solid transparent;
+    border-top-left-radius: 105px;
+    border-top-right-radius: 105px;
+}
+
+
+
+ 
+ /*Services*/
+ .A {
+
+    
+    /*flex-wrap:wrap;                                      .... : The flexible items will wrap if necessary.*/
+     display:flex;
+     margin-left: 90px;
+     margin-right:90px;
+    
+     
+     }
+     .B{
+      display:flex;
+      margin-left: 90px;
+      margin-right:90px;
+     }
+     
+     .C{
+       display:flex;
+       margin-left: 344px;
+       margin-right:344px;
+     }
+     .main_content{
+     
+     justify-content:space-evenly;
+     background-image:url("login-bg-img.jpg");
+     background-size: 100% 100%;
+     width:100%;
+     height:1600px;
+     
+     }
+    .s{
+        margin-top:25px; 
+        margin-bottom: 80px;    
+    }
+
+     
+    .Serv{
+
+     margin-top:35px;
+     height:170px;
+     border:1px solid white;
+     width:190 px;
+     /* margin-left:30px;*/
+     
+      margin-right:30px;
+      padding-left:11px;
+      padding-right:11px;
+      padding-top:13px;
+      padding-bottom:13px;
+      border-radius: 7px 7px 7px 7px;
+      background-color:#FFFFFF;
+     }
+     .box-img{
+      height:121px ;
+      width:200px ;
+      background-size:cover;
+      margin-bottom:10px;	
+     }
+    .s-txt{
+        text-align:center;
+        font-size:1.08rem;
+        color:#000;
+        font-weight:bolder;
+    }
+    .text-deco{
+        text-decoration: none;
+    }
+    
+
+
+
+ /*Footer*/
+ 
+ .footer-info{
+  
+  padding-left:460px;
+  padding-right:460px;
+  padding-top:20px;
+  padding-bottom:20px;
+  bottom:0;
+   
+  /*background-color:paleturquoise;*/
+ background-color: #232F3E;
+
+/*
+position:fixed;
+ bottom :0px;
+*/
+ 
+ width:100%;
+ height:100px;
+ display:block;
+ margin:0;
+}
+
+    
+ 
+ 
+ .address-data{
+ display :flex;
+ }
+ 
+ .mobno{
+  display:flex;
+ }
+ 
+ 
+ 
+ 

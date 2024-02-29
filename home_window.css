@@ -1,0 +1,182 @@
+   * {
+    margin :0;
+    padding: 0;
+    font-family: arial;
+    border :border-box;
+
+
+   }
+
+   
+
+
+      /* Tagline  */
+      
+.tagline{
+       
+        height:33px;
+        width:85%;
+        background: #FFFFFF;
+        margin-top: 20px;;
+        
+        margin-right:110px;
+ }
+.tagline p {
+        margin:2px;
+        display : flex;
+        justify-content:center;
+        align-items:center;
+        font-weight: bolder;
+        font-size:1.2rem;
+        color:#232F3E;
+}
+       
+        
+    /*Services*/
+.A {
+        /*flex-wrap:wrap;                                      .... : The flexible items will wrap if necessary.*/
+         display:flex;
+         margin-top:160px;
+         margin-left: 90px;
+         margin-right:90px;
+         padding-top:30;
+         padding-top:30;
+}
+.B{
+          margin-top:20px;
+          display:flex;
+          margin-left: 90px;
+          margin-right:90px;
+}
+         
+.C{
+           display:flex;
+           margin-top:20px;
+           margin-left: 344px;
+           margin-right:344px;
+}
+.Services{
+         
+         justify-content:space-evenly;
+         background-image:url("login-bg-img.jpg");
+         background-size: 100% 100%;
+         width:100%;
+         height:1500px;
+         
+}
+         
+.Serv{
+         height:170px;
+         border:1px solid white;
+         width:190 px;
+         /* margin-left:30px;*/
+         
+          margin-right:30px;
+          padding-left:11px;
+          padding-right:11px;
+          padding-top:13px;
+          padding-bottom:13px;
+          border-radius: 7px 7px 7px 7px;
+          background-color:#FFFFFF;
+}
+.box-img{
+          height:121px ;
+          width:200px ;
+          background-size:cover;
+          margin-bottom:10px;	
+}
+.text-deco {
+
+    text-decoration:none;
+}
+
+
+         
+.s-txt{
+            text-align:center;
+            font-size:1.08rem;
+            color:#000;
+            font-weight:bolder;
+}
+       
+
+        
+   /*   Doctors*/
+.doctors{
+    display:flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-left:190px;
+    margin-right:190px;
+    height:250px;
+    margin-top:90px;
+    
+}
+   
+.box{
+   
+   background-color:#232F3E;
+   color:white;
+   width:175px;
+   border:10px solid#232F3E;
+   height:190px;
+   border-radius: 10px;
+   
+}
+.doc1-img{
+    background-image: url('docter2.png');
+    background-size: cover;
+    margin-right: 9px;
+    height: 140px;
+    width:140px;
+    border-radius: 50%;
+    margin-bottom:5px;
+   /*  border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px; */
+
+}
+
+.doc2-img{
+    background-image: url('docter2.png');
+    background-size: cover;
+    margin-right: 9px;
+    height: 140px;
+    width:140px;
+    border-radius: 50%;
+    margin-bottom:5px;
+    border:1px solid transparent;
+    /*  border-bottom-left-radius: 15px;
+    border-bottom-right-radius:15px;  */
+}
+
+.doc3-img{
+    background-image: url('docter1.jpg');
+    background-size: cover;
+    margin-right: 9px;
+    height: 140px;
+    width:140px;
+    border-radius: 50%;
+    margin-bottom:5px;
+    border:1px solid transparent;
+   /*   border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;  */
+}
+.doc-name{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border:1px solid transparent;
+    border-top-left-radius: 105px;
+    border-top-right-radius: 105px;
+}
+
+
+.alink{
+    color:#fff;
+     margin-left :90px;
+    text-decoration:none;
+    font-weight:bolder;
+    font-size:1rem;
+}   
+        

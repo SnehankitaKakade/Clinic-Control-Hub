@@ -1,0 +1,97 @@
+*{
+    margin:0;
+    padding:0;
+    border: border-box;
+    
+}
+.c-img{
+    
+    background-image: url("contact-bg-img.jpg");
+    background-size:cover;
+    height:740px;
+    width:100%;
+}
+.c-msg{
+   
+    color:#fff;
+    font-size:3rem;
+    position:absolute;
+    top:45px;
+    left:45%;
+
+
+}
+
+.c-form{  
+    height: 600px;
+    width:450px;
+    position:absolute;
+    left:900px;
+    top:210px;
+}
+.c-form p{
+    color:#fff;
+    font-size: 2rem;
+    text-align: left;
+}
+.c-form input{
+    text-align: left;
+    font-weight: bold;
+    margin-top:20px;
+    width:420px;
+    height:45px;
+    border-radius: 5px;
+    border:1px solid transparent;
+}
+.c-form textarea {
+    text-align: left;
+    font-weight: bold;
+    width:420px;
+    height: 100px;
+    margin-top:20px;border-radius: 5px;
+    border:1px solid transparent;
+   
+}
+
+.capcha{
+    height: 50px;
+    width: 250px;
+    background-color: white;
+   
+    margin-top:20px;
+    border-radius: 5px;
+    border:1px solid transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+.capcha input{
+    width:25px;
+    height: 25px;
+    border:1px solid black;
+   margin-right: 30px;
+   margin-bottom: 15px;
+}
+.capcha p{
+    font-size: 1rem;
+    color:black;
+}
+.c-form button{
+    width:200px;
+    height: 40px;
+    font-weight: bold;
+}
+
+.f-button{
+    margin-top: 25px;
+    margin-right: 217px; 
+    
+}
+
+
+
+
+
+
+

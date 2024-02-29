@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parth_hospital_Monitoring_Chart</title>
+
+
+    <!-- html file linked to css  -->
+    <link rel="stylesheet" href="Home.css">
+
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.rtl.min.css"
+        integrity="sha384-nU14brUcp6StFntEOOEBvcJm4huWjB0OcIeQ3fltAfSmuZFrkAif0T+UtNGlKKQv" crossorigin="anonymous">
+
+
+    <!-- Fontawesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <style>
+        body {
+            /* background-color: #9799CA; */
+            background-image: url("bg-h.jpg");
+        }
+
+        .form-sty {
+            background-color: #68cfb7;
+            border: 7px solid #e4afd5;
+            border-radius: 15px;
+            position: absolute;
+            top: 7%;
+            left: 25%;
+            width: 815px;
+
+        }
+
+        .form-name {
+            text-align: center;
+            font-weight: bolder;
+            font-size: 1.5rem;
+            color: #bc4749;
+            text-shadow: 3px 3px 2px #738bab;
+        }
+
+        .hospi-name {
+            text-align: center;
+            font-weight: 590;
+            font-family: Gabriola, Times, serif;
+            padding: 0;
+            font-size: 4.1rem;
+            text-shadow: 3px 5px 3px gray;
+            color: teal;
+
+        }
+
+        .input-sty {
+            width: 110px;
+            border: 2px solid #e4afd5;
+            border-radius: 5px;
+            line-height: 25px;
+            margin-bottom: 20px;
+        }
+
+        .tab1 {
+            margin-left: 20px;
+            padding: 20px;
+
+        }
+
+        .tab1 input {
+            margin-left: 20px;
+            margin-bottom: 10px;
+            border: 1px solid black;
+            border-radius: 5px;
+            background-color: #68cfb7;
+        }
+
+        .tab1 label {
+            margin-left: 10px;
+
+        }
+
+        .dts-sty {
+            width: 200px;
+            border: 2px solid #e4afd5;
+            border-radius: 5px;
+            line-height: 25px;
+
+        }
+
+        button {
+
+            width: 110px;
+
+        }
+
+        .dose-sty {
+            display: inline-block;
+            margin: 20px;
+            width: 400px;
+            border: 2px solid #e4afd5;
+            border-radius: 5px;
+            line-height: 25px;
+        }
+
+        .dose label {
+            margin-left: 10px;
+            font-weight: bold;
+
+        }
+
+        .dt input {
+            margin-left: 20px;
+        }
+        .btnb {
+            height: 50px;
+            width:110px;
+            font-weight: bolder;
+            background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(255,94,247,1) 17.8%, rgba(2,245,255,1) 100.2% );
+            color: black;
+            font-size: 1.5rem;
+            border:3px solid rgb(59, 58, 58);
+            border-radius: 10px;
+            margin: 20px;
+        }
+    </style>
+
+
+
+</head>
+
+<body>
+
+    <form class="form-control form-sty">
+
+
+        <p class="hospi-name">Parth Hospital</p>
+
+        <p class="form-name">Drug Record</p>
+        <br>
+        <table class="tab1">
+            <tr>
+                <th><label for="name">Patient Name :</label></th>
+                <th colspan="6"><input class="form-control" type="text" id="name" placeholder="Enter Name"></th>
+
+            </tr>
+
+            <tr>
+                <th><label for="ipd-no">IPD No :</label></th>
+                <th><input class="form-control input-sty" type="number" id="ipd-no"></th>
+                <th><label for="wd-no">Ward No : </label></th>
+                <th><input class="form-control input-sty" type="number" id="wd-no"></th>
+                <th><label for="bed-no">Bed No :</label></th>
+                <th><input class="form-control input-sty" type="number" id="bed-no"></th>
+
+            </tr>
+        </table>
+
+
+        <hr style="color:black;border-width:6px;">
+
+        <div class="dt d-flex">
+
+            <label for="dt" style="font-weight: bold;">Date :</label>
+            <input class="form-control dts-sty" type="date" id="dt">
+
+            <label for="tm" style="margin-left:240px ;font-weight: bold;">Time :</label>
+            <input class="form-control dts-sty " type="time" id="tm">
+
+        </div>
+
+        <div class="dose" style="margin-left:80px">
+
+            <label for="drg">Drug :&nbsp;</label>
+            <input class="form-control dose-sty" type="text" id="drg"><br>
+
+            <label for="dos">Dose :&nbsp;</label>
+            <input class="form-control dose-sty" type="text" id="dos"> <br>
+
+            <label for="route">Route :</label>
+            <input class="form-control dose-sty" type="text" id="route"><br>
+
+            <label for="Freq">Freq :&nbsp;&nbsp;</label>
+            <input class="form-control dose-sty" type="text" id="Freq"><br>
+        </div>
+
+        <br>
+        <div class="d-flex">
+            <label for="sign" style="margin-left:492px;font-weight: bold;margin-right: 10px;">By Sign :</label>
+            <input class="form-control dts-sty" type="text" id="sign" style="text-align: right;">
+        </div>
+
+        <div style="display: flex;align-items: center;justify-content: center;">
+            <button class="btn btn-danger lg w-20">Add</button>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </form>
+
+    <a href="patient_record.html"> <button  class="btnb"type="button" ><i class="fa-solid fa-arrow-left"></i>&nbsp;Back</button> </a>
+
+
+
+
+
+
+</body>
+
+</html>
