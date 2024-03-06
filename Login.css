@@ -1,55 +1,63 @@
-@charset "UTF-8";
+
 body{
 	margin:0;
 	padding:0;
-	background:url("img.avif");
+	/* background:url("img.avif"); */
 	/* background:linear-gradient(115deg,#56d8e4 10%, #9f01ea 90%); */
 	background-size:cover;
 	height: auto;
 	font-family:sans-serif;
 	/*   background-position:center;*/
 }
-.login-window{
+/* .modal-dialog {
+	 Applied inline css width:400px 
+} */
+.modal-content {
 	background:url("bg-h.jpg");
 	background-size:cover;
-	width:380px;
-	height:480px;
+	height:550px;
 	border: 1px solid#2b6072;
-	color:#2b6072;
-	background-size:cover;
-	position:absolute;
-	top:50%;
-	left:60%;
-	transform:translate(-0.0%,-45%);
-	box-sizing:border-box;
-	padding :70px 30px;
-	border-radius: 20px;
+	margin-top:100px;
+		
+	/* border-radius,width not applied to modal content  ? */
 }
+
+.l-div {
+	display:flex;
+	justify-content: left;
+	align-items:center;
+
+}
+
 .login-img{
-	width:100px;
-	height:100px;
+	width:110px;
+	height:110px;
 	border-radius:50%;
-	position:absolute;
-	top:-50px;
-	left:calc(50% - 50px);
+	margin-right: 20px;
 	
 	
 }
   #login-txt{
 	margin:0;
-	padding:0;
+	margin-top:30px;
 	text-align:center;
-	font-size:2.2rem;
+	font-size:2.4rem;
 	margin-bottom:40px;
-	
+	color: #2b6072;
 }
-.login-window label{
+form label{
 	margin:0;
 	padding:0;
 	font-weight: bold;
     font-size:1.3rem;
+	color: #2b6072;
+	width:100%
 }
-.login-window input{
+form {
+	margin-left:25px;
+	width:350px;
+}
+form input {
 	border:none;
 	border-bottom : 3px solid#2b6072;
 	background:transparent;
@@ -61,19 +69,19 @@ body{
 	font-size: 18px;
 
 }
-button {
-	height: 40px;
-	width:100%;
-	background: #2b6072;
-	color:white;
-}
+/* button  */
 
 form button{
+	
 	font-size: 1.5rem;
 	border:1px solid white;
 	border-radius: 20px;
 	margin-bottom:20px;
 	margin-top:25px;
+	background: #2b6072;
+	color:white;
+	height: 40px;
+	width:100%;
 }
  
 

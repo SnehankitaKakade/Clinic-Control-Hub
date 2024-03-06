@@ -10,6 +10,7 @@ body {
     padding: 0;   
     background-size: cover;
     font-family: sans-serif;
+   
     /*   background-position:center;*/
     /* background:linear-gradient(115deg,#56d8e4 10%, #9f01ea 90%); */
 
@@ -43,7 +44,7 @@ body {
     color: teal;
 }
 
-/* BOX 3*/
+
 .emergency {
     font-size: 1.2rem;
     margin-right: 60px;
@@ -146,7 +147,7 @@ body {
 
 .login-form input {
     border: none;
-    border-bottom: 3px solid#2b6072;
+    border-bottom: 3px solid #2b6072;
     background: transparent;
     width: 100%;
     margin-bottom: 20px;
@@ -205,98 +206,111 @@ body {
     background-size: cover;
 }
 
-/* Contact-form */
-.g-msg {
-    color: #2b6072;
-    font-size: 2.7rem;
-}
-
-.locationAndform-container {
-    display: flex;
-    align-items: center;
-    justify-content:center ;
-    margin-bottom: 50px;
-
-}
-.location-container {
+.about-page {
    
-    background-color: grayred;
-    height: 200px;
+   background-size: 100% 100%;
+   height: 700px;
+   width:100%;
 }
-
-.contact-form {
-    
-    width:800px;
-      
-}
-.contact-form textarea,input[type="number"] {
-    color: #2b6072;
-    border: 1px solid #2b6072 ;
-
-}
-.contact-form input[type="email"] {
-    color: #2b6072;
-    border: 1px solid #2b6072 ;
-    
-}
-.contact-form input[type="text"],[type="number"],[type="email"] {
-   
-    background: transparent;
-    width: 100%;
-    margin-bottom: 20px;
-    outline: none;
-    height: 40px;
-    color: #2b6072;
-    border: 1px solid #2b6072 ;
-
-}
-.contact-form button {
-    text-align: center;
-    font-size: 1.2rem;
-    border: 1px solid white;
-    border-radius: 13px;
-    margin-bottom: 10px;
-    margin-top: 10px;
-    background: #2b6072;
-    color: white;
-    height: 40px;
-    width: 100%;
+.about-text {
+    font-size:3rem;
     font-weight: bold;
+    text-align: left;
+    margin-left:35px;
+    color:#2b6072;
+}
+.about-desc {
+    text-indent:7%;
+    text-align: left;
+    line-height: 20px;
+    color:#232F3E;
+    width:100%
+}
+       
+/*   Doctors*/
+.doctors {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-left: 190px;
+    margin-right: 190px;
+    margin-top:50px;
+    
+   
 }
 
+.box {
 
-
-
-.contact-form button:hover {
-    cursor: pointer;
-    background: #1c9436;
-    color: #fff;
+    background-color: white;;
+    color: #232F3E;
+    width: 280px;
+    border: 0px solid #232F3E;
+    box-shadow: 2px 2px 5px  gray;
+    height: 340px;
+    border-radius: 10px;
+    background-image: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);
     
 }
 
+.doc1-img {
+    background-image: url('pro-icon.png');
+    background-size: cover;  
+    height: 180px;
+    width: 180px;
+    border-radius: 50%;
+    margin-left:57px;
+    margin-top:13px;
 
-.capcha-container {
-   
-    display: flex;
-    justify-content:left;
-    align-items: center;
-    margin-top:20px;
-    border-radius: 5px;
-    border:1px solid transparent;
-   
-} 
-.contact-form input[type="checkbox"] {
-    width:25px;
-    height: 25px;
-    margin-right: 15px;
-    margin-left: 10px;;
-   
-    border: 2px solid #2b6072  ;
+
 }
-.contact-form label {
-    font-size: 1.2rem;
-    color:#2b6072 ;
-} 
+
+.doc2-img {
+    background-image: url('pro-icon.png');
+    background-size: cover;
+    background-size: cover;  
+    height: 180px;
+    width: 180px;
+    border-radius: 50%;
+    margin-left:57px;
+    margin-top:13px;
+
+}
+
+.doc3-img {
+    background-image: url('docter1.jpg');
+    background-size: cover;  
+    height: 170px;
+    width: 170px;
+    border-radius: 50%;
+    margin-left:57px;
+    margin-top:20px;
+}
+
+.doc-name {
+   font-size: 1.4rem;
+   font-weight: bold;
+   color:#232F3E;
+   width:100%;
+   margin-top:20px;
+   text-align: center;
+   
+}
+.doc-degree {
+   text-align: center;  
+   background-color: gray;
+   height: 65px; 
+   padding: 3px; 
+   width:90%;
+   margin: 15px;
+   color: white;
+   font-size:0.9rem;
+}
+.doc1 .doc-degree {
+    padding-top: 7px;
+}
+
+
+
 
 
 /*Footer*/
